@@ -19,11 +19,10 @@ jobs:
           distribution: temurin
           java-version: 25
 
-      - name: Make Gradle executable
-        run: chmod +x gradlew
+- name: Build
+  run: bash ./gradlew build
 
-      - name: Build
-        run: ./gradlew build
+
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
