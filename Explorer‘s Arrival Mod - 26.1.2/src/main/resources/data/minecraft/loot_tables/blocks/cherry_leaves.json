@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "explorersarrival:cherry",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "chance": 0.1,
+              "enchantment": "minecraft:fortune",
+              "bonus_multiplier": 0.1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
